@@ -1,0 +1,249 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.facedistanceblur"
+4    android:versionCode="2"
+5    android:versionName="1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml
+10
+11    <!-- Camera permission for face detection - required for core functionality -->
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:4:5-65
+12-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:4:22-62
+13
+14    <!-- Proximity sensor for distance detection -->
+15    <uses-permission android:name="android.permission.PROXIMITY_SENSOR" />
+15-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:7:5-74
+15-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:7:22-72
+16
+17    <!-- Overlay permission for blur effect - can be made optional -->
+18    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+18-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:10:5-78
+18-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:10:22-75
+19
+20    <!-- Accessibility service for background monitoring -->
+21    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+21-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:13:5-85
+21-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:13:22-82
+22
+23    <uses-feature
+23-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:15:5-90
+24        android:name="android.hardware.camera.front"
+24-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:15:19-63
+25        android:required="true" />
+25-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:15:64-87
+26    <uses-feature
+26-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:16:5-95
+27        android:name="android.hardware.camera.autofocus"
+27-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:16:19-67
+28        android:required="false" />
+28-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:16:68-92
+29
+30    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+31    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+32-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
+32-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
+33    <uses-permission android:name="android.permission.INTERNET" />
+33-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
+33-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:26:22-64
+34
+35    <application
+35-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:18:5-51:19
+36        android:allowBackup="true"
+36-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:19:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.7.0] C:\Users\lenovo\.gradle\caches\transforms-3\a5091567783c46d5262c6ecc58241880\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+38        android:extractNativeLibs="false"
+39        android:label="Face Distance Blur"
+39-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:20:9-43
+40        android:supportsRtl="true"
+40-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:21:9-35
+41        android:theme="@style/Theme.FaceDistanceBlur" >
+41-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:22:9-54
+42        <activity
+42-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:24:9-30:20
+43            android:name="com.facedistanceblur.LoginActivity"
+43-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:24:19-48
+44            android:exported="true" >
+44-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:25:13-36
+45            <intent-filter>
+45-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:26:13-29:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:27:17-69
+46-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:27:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:28:17-77
+48-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:28:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity
+51-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:32:9-33:40
+52            android:name="com.facedistanceblur.MainActivity"
+52-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:32:19-47
+53            android:exported="false" />
+53-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:33:13-37
+54        <activity
+54-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:35:9-36:40
+55            android:name="com.facedistanceblur.SignupActivity"
+55-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:35:19-49
+56            android:exported="false" />
+56-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:36:13-37
+57        <activity
+57-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:38:9-39:40
+58            android:name="com.facedistanceblur.SettingsActivity"
+58-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:38:19-51
+59            android:exported="false" />
+59-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:39:13-37
+60
+61        <service
+61-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:41:9-50:19
+62            android:name="com.facedistanceblur.BlurAccessibilityService"
+62-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:41:18-58
+63            android:exported="false"
+63-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:42:13-37
+64            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+64-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:43:13-79
+65            <intent-filter>
+65-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:44:13-46:29
+66                <action android:name="android.accessibilityservice.AccessibilityService" />
+66-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:45:17-92
+66-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:45:25-89
+67            </intent-filter>
+68
+69            <meta-data
+69-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:47:13-49:72
+70                android:name="android.accessibilityservice"
+70-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:48:17-60
+71                android:resource="@xml/accessibility_service_config" />
+71-->C:\Users\lenovo\Downloads\FaceDistanceBlurApp (7)\app\src\main\AndroidManifest.xml:49:17-69
+72        </service>
+73        <service
+73-->[androidx.camera:camera-camera2:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\048f15f032bde3d96c449c382ec79a9a\transformed\jetified-camera-camera2-1.1.0\AndroidManifest.xml:26:9-35:19
+74            android:name="androidx.camera.core.impl.MetadataHolderService"
+74-->[androidx.camera:camera-camera2:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\048f15f032bde3d96c449c382ec79a9a\transformed\jetified-camera-camera2-1.1.0\AndroidManifest.xml:27:13-75
+75            android:enabled="false"
+75-->[androidx.camera:camera-camera2:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\048f15f032bde3d96c449c382ec79a9a\transformed\jetified-camera-camera2-1.1.0\AndroidManifest.xml:28:13-36
+76            android:exported="false" >
+76-->[androidx.camera:camera-camera2:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\048f15f032bde3d96c449c382ec79a9a\transformed\jetified-camera-camera2-1.1.0\AndroidManifest.xml:29:13-37
+77            <meta-data
+77-->[androidx.camera:camera-camera2:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\048f15f032bde3d96c449c382ec79a9a\transformed\jetified-camera-camera2-1.1.0\AndroidManifest.xml:32:13-34:89
+78                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+78-->[androidx.camera:camera-camera2:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\048f15f032bde3d96c449c382ec79a9a\transformed\jetified-camera-camera2-1.1.0\AndroidManifest.xml:33:17-103
+79                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+79-->[androidx.camera:camera-camera2:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\048f15f032bde3d96c449c382ec79a9a\transformed\jetified-camera-camera2-1.1.0\AndroidManifest.xml:34:17-86
+80        </service>
+81        <service
+81-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2d2211439a60297f7f2d3a1da1f39e8c\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:9:9-15:19
+82            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+82-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2d2211439a60297f7f2d3a1da1f39e8c\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:10:13-91
+83            android:directBootAware="true"
+83-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:17:13-43
+84            android:exported="false" >
+84-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2d2211439a60297f7f2d3a1da1f39e8c\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:11:13-37
+85            <meta-data
+85-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2d2211439a60297f7f2d3a1da1f39e8c\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:12:13-14:85
+86                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+86-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2d2211439a60297f7f2d3a1da1f39e8c\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:13:17-114
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2d2211439a60297f7f2d3a1da1f39e8c\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:14:17-82
+88            <meta-data
+88-->[com.google.mlkit:vision-common:17.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\88ba8e091afbafee8be870ae1168e30b\transformed\jetified-vision-common-17.1.0\AndroidManifest.xml:12:13-14:85
+89                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+89-->[com.google.mlkit:vision-common:17.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\88ba8e091afbafee8be870ae1168e30b\transformed\jetified-vision-common-17.1.0\AndroidManifest.xml:13:17-124
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.mlkit:vision-common:17.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\88ba8e091afbafee8be870ae1168e30b\transformed\jetified-vision-common-17.1.0\AndroidManifest.xml:14:17-82
+91            <meta-data
+91-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:20:13-22:85
+92                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+92-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:21:17-120
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:22:17-82
+94        </service>
+95
+96        <provider
+96-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:9:9-13:38
+97            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+97-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:10:13-78
+98            android:authorities="com.facedistanceblur.mlkitinitprovider"
+98-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:11:13-69
+99            android:exported="false"
+99-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:12:13-37
+100            android:initOrder="99" />
+100-->[com.google.mlkit:common:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\0186f6ec1f1df8c06cdf36c7588fb245\transformed\jetified-common-18.1.0\AndroidManifest.xml:13:13-35
+101
+102        <activity
+102-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\7c4b0475e94c8375312c39af379c4b25\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+103            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+103-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\7c4b0475e94c8375312c39af379c4b25\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+104            android:exported="false"
+104-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\7c4b0475e94c8375312c39af379c4b25\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+105-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\7c4b0475e94c8375312c39af379c4b25\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+106
+107        <meta-data
+107-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\d17ebda8d11cf44ad4001d317e5867ed\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+108            android:name="com.google.android.gms.version"
+108-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\d17ebda8d11cf44ad4001d317e5867ed\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+109            android:value="@integer/google_play_services_version" />
+109-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\d17ebda8d11cf44ad4001d317e5867ed\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+110
+111        <provider
+111-->[androidx.emoji2:emoji2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\69b718fb4480b927d2a3951595ad22d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+112            android:name="androidx.startup.InitializationProvider"
+112-->[androidx.emoji2:emoji2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\69b718fb4480b927d2a3951595ad22d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+113            android:authorities="com.facedistanceblur.androidx-startup"
+113-->[androidx.emoji2:emoji2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\69b718fb4480b927d2a3951595ad22d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+114            android:exported="false" >
+114-->[androidx.emoji2:emoji2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\69b718fb4480b927d2a3951595ad22d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+115            <meta-data
+115-->[androidx.emoji2:emoji2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\69b718fb4480b927d2a3951595ad22d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+116                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+116-->[androidx.emoji2:emoji2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\69b718fb4480b927d2a3951595ad22d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+117                android:value="androidx.startup" />
+117-->[androidx.emoji2:emoji2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\69b718fb4480b927d2a3951595ad22d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+118            <meta-data
+118-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\lenovo\.gradle\caches\transforms-3\685f1eb152d8560ca85b54d21ec4d958\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+119                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+119-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\lenovo\.gradle\caches\transforms-3\685f1eb152d8560ca85b54d21ec4d958\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+120                android:value="androidx.startup" />
+120-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\lenovo\.gradle\caches\transforms-3\685f1eb152d8560ca85b54d21ec4d958\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+121        </provider>
+122
+123        <service
+123-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+124            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+124-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+125            android:exported="false" >
+125-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+126            <meta-data
+126-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+127                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+127-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+128                android:value="cct" />
+128-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\lenovo\.gradle\caches\transforms-3\f11230ded8ab1c46b35d0291450f5708\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+129        </service>
+130        <service
+130-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\transforms-3\3dac716570786e79af68fbee3f9874a2\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+131            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+131-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\transforms-3\3dac716570786e79af68fbee3f9874a2\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+132            android:exported="false"
+132-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\transforms-3\3dac716570786e79af68fbee3f9874a2\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+133            android:permission="android.permission.BIND_JOB_SERVICE" >
+133-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\transforms-3\3dac716570786e79af68fbee3f9874a2\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+134        </service>
+135
+136        <receiver
+136-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\transforms-3\3dac716570786e79af68fbee3f9874a2\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+137            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+137-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\transforms-3\3dac716570786e79af68fbee3f9874a2\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+138            android:exported="false" />
+138-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\lenovo\.gradle\caches\transforms-3\3dac716570786e79af68fbee3f9874a2\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+139    </application>
+140
+141</manifest>

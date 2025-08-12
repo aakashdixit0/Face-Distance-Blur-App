@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\layout_blur_overlay.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\layout\\blur_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\drawable_edit_text_background.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\drawable\\edit_text_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\drawable\\button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\xml_accessibility_service_config.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\xml\\accessibility_service_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\drawable_button_background_secondary.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\drawable\\button_background_secondary.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\drawable_blur_popup_card_bg.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\drawable\\blur_popup_card_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\build\\intermediates\\merged_res\\release\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\lenovo\\Downloads\\FaceDistanceBlurApp (7)\\app\\src\\main\\res\\layout\\activity_signup.xml"
+    }
+]

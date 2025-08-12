@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Camera permission for face detection - required for core functionality -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <!-- Proximity sensor for distance detection -->
+    <uses-permission android:name="android.permission.PROXIMITY_SENSOR"/>
+    
+    <!-- Overlay permission for blur effect - can be made optional -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    
+    <!-- Accessibility service for background monitoring -->
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+
+    <uses-feature android:name="android.hardware.camera.front" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Face Distance Blur"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FaceDistanceBlur">
+        
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity android:name=".SignupActivity"
+            android:exported="false" />
+
+        <activity android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <service android:name=".BlurAccessibilityService"
+            android:exported="false"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+    </application>
+
+</manifest>
